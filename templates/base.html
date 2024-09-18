@@ -66,7 +66,11 @@
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
-        <p class="m-0 text-center text-white">Created by Meghana Vinakota - For educational puposes</p>
+        <p class="m-0 text-center text-white">
+            {% block copyright %}
+            Created by Meghana Vinakota - For educational puposes
+            {% endblock copyright %}
+        </p>
         <p class="m-0 text-center text-white">Follow us:
 
             <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Follow us on Facebook"><i

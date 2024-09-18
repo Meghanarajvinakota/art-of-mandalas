@@ -1,0 +1,240 @@
+/*Asterix tag overides browsers default style settings*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0eeea;
+    font-family: 'alice', sans-serif;
+}
+
+.brand {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+}
+
+.navbar {
+    background-color: #ffc107;
+}
+
+.dark-bg {
+    background-color: #ffc107;
+}
+
+.main-bg {
+    background-color:white ;
+}
+
+ /* Hero Image */
+
+#hero-outer {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+.hero-image {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+   
+  }
+
+/* Cover text on hero image */
+.cover-text {
+    background-color: rgba(33, 33, 33, 0);
+    font-family: "Lato", sans-serif;
+    position: absolute;
+    top: 5vh;
+    padding: 150px 7px 0px 7px;
+    text-align: left;
+    border-radius: 3px;
+    width: 78%;
+  }
+  
+.cover-text > h1 {
+    color:white;
+    padding-top: 8px;
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  
+.cover-text > h2 {
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+.home-text{
+font-family: "alice", sans-serif;
+font-size: 40px;
+font-weight: 600;
+padding:20px;
+text-decoration: underline;
+color: #fff;
+background-color: #ffc107;
+text-align: center;
+}
+
+/* Popular recipes cards*/
+
+.card {
+    background-color: white;
+    border: 3px solid #ffc107;
+    color: black;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-flash {
+    position: absolute;
+    bottom: 5%;
+    min-width: 30%;
+    left: -2px;
+    background-color: #ffc107;
+}
+
+.scale {
+    width: 100%;
+    height: auto;
+}
+
+/*Recipe Details*/
+
+.masthead {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    height: 33vh;
+    width: 100%;
+}
+
+.masthead-text {
+    background-color: #fde396;
+    color: black;
+    padding:20px;
+    text-align: center;
+}
+
+
+.post-link {
+    text-decoration: none;
+    color: black;
+}
+
+.recipe-link:hover,
+.page-link {
+    color: #ffc107;
+}
+
+.post-title {
+    margin-top: 10%;
+    margin-left: 5%;
+    text-decoration: underline;
+}
+
+.post-subtitle {
+    margin-left: 5%;
+    color: black;
+}
+.btn-primary {
+    background-color: #ffc107;
+    border: 3px solid #fff;
+    color: white;
+}
+.btn-primary:hover {
+    background-color: #fff;
+    color: #ffc107;
+    border: 3px solid #ffc107;
+}
+/* About page*/
+
+.about-pic {
+    height: 100vh;
+    width: 100vw;
+}
+/* Signup page*/
+
+.btn-signup,
+.btn-edit {
+    background-color: #fff;
+    color: #ffc107;
+    text-align: center;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fff;
+    color: black;
+}
+
+.recipe-link {
+    color: black;
+    text-decoration: none;
+}
+
+.btn-delete {
+    color: #fff;
+    background: #f37e57;
+}
+
+
+/*Share Page*/
+
+.shared-card {
+    border: #ffc107 ;
+    box-shadow: #ffc107 1px 10px 10px 1px;
+    padding: 15px;
+    margin-bottom: 25px;
+    height: 500px;
+}
+
+.share-book {
+    align-items: center;
+}
+
+.title {
+    margin-bottom: -10px;
+}
+
+.share-img {
+    height:60%;
+    width:60%;
+    padding:20px;
+}
+
+
+.shared-card {
+    position: relative;
+    margin-bottom: 15px;
+    padding: 20px 0 10px;
+    border-radius: 5px;
+}
+
+.shared-card .content p {
+    margin-bottom: 110px !important;
+}
+
+.shared-text {
+    font-size: 2rem;
+}
+
+/*Footer*/
+
+ i{
+    text-decoration: none;
+    color: white;
+}
+.socials {
+ justify-content:space-evenly;
+}

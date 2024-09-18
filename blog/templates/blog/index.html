@@ -6,23 +6,20 @@
 <div class="container-fluid">
     <div class="row">
         <main class="flex-shrink-90 main-bg">
-      
+
             <section id="hero-outer">
-            
-              <img
-                src="{% static 'images/mandala.webp' %}"
-                class="hero-image"
-                alt="mandala image"
-              />
-              <div class="cover-text">
-                <h1>Welcome to Art of Mandalas</h1>
-                <h2>There is great power in creating your own mandalas</h2>
-                <p><a class="btn btn-lg btn-primary" href="#popular" aria-label="Go to the popular Arts">Explore Popular Mandalas</a></p>
-                <br>
-              </div>
+
+                <img src="{% static 'images/mandala.webp' %}" class="hero-image" alt="mandala image" />
+                <div class="cover-text">
+                    <h1>Welcome to Art of Mandalas</h1>
+                    <h2>There is great power in creating your own mandalas</h2>
+                    <p><a class="btn btn-lg btn-primary" href="#popular" aria-label="Go to the popular Arts">Explore
+                            Popular Mandalas</a></p>
+                    <br>
+                </div>
             </section>
-         
-          </main>
+
+        </main>
         <!-- Blog Entries Column -->
         <div id="popular" class="col-12 mt-3 left">
             <p class="home-text">Popular Arts</p>
@@ -39,12 +36,13 @@
                             </div>
                             <a href="#" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2>
+                                <p class="card-text">{{ post.excerpt }}</p>
                             </a>
 
                             <hr />
                             <p class="card-text text-muted h6">{{ post.created_on}}
                             </p>
-                            <hr />
+
                         </div>
                     </div>
                 </div>
@@ -60,6 +58,11 @@
     {% if is_paginated %}
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
+            {% if page_obj.has_previous %}
+            <li>
+                <a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV</a>
+            </li>
+            {% endif %}
             {% if page_obj.has_next %}
             <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
             {% endif %}
@@ -69,4 +72,7 @@
 </div>
 
 <!-- index.html content ends here -->
+{% block copyright %}
+Copyright 2023 Meghana Vinakota
+{% endblock %}
 {% endblock %}
