@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container mt-12">
+    <div class="row">
+        <div class="col-12 text-center">
+        </div>
+        <div class="col-12 text-center">
+
+            <!-- Title -->
+
+            <h2>{{ about.title }}</h2>
+            <br>
+
+            <!-- About Content -->
+
+            {{ about.content | safe }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-right">
+            <!-- Updated on field goes in here -->
+
+            <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+        </div>
+    </div>
+</div>
+{% endblock content %}
