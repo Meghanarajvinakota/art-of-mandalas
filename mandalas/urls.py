@@ -19,6 +19,7 @@ from django.urls import path, include
 
 
 urlpatterns = [
+    path("share/", include("share.urls"), name="share-urls"),
     path("contact/", include("contact.urls"), name="contact-urls"),
     path("about/", include("about.urls"), name="about-urls"),
     path("accounts/", include("allauth.urls")),
