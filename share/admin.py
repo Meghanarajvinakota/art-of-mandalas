@@ -7,7 +7,12 @@ from django_summernote.admin import SummernoteModelAdmin
 @admin.register(Share)
 class ShareAdmin(admin.ModelAdmin):
     list_display = ('name', 'title', 'approved')
-    actions = ['approve_shared']
+    list_filter = ('approved',)  # Add filter by approval status
+    actions = ['approve_shares']
 
-    def approved_shared(self, request, queryset):
+    def approve_shares(self, request, queryset):
         queryset.update(approved=True)
+        self.message_user(request, "Selected shares have been approved.")  # Confirmation message
+
+    approve_shares.short_description = "Approve selected shares"  # Description for the action
+
