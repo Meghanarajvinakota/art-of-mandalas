@@ -17,11 +17,11 @@ body {
 }
 
 .navbar {
-    background-color: #ffc107;
+    background-color: #eb5f08;
 }
 
 .dark-bg {
-    background-color: #ffc107;
+    background-color: #eb5f08;
 }
 
 .main-bg {
@@ -43,6 +43,7 @@ body {
     width: 100%;
     overflow: hidden;
     object-fit: cover;
+    opacity: 1;
    
   }
 
@@ -56,21 +57,25 @@ body {
     text-align: left;
     border-radius: 3px;
     width: 78%;
+    text-align: center;
   }
   
 .cover-text > h1 {
     color:white;
     padding-top: 8px;
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: 400;
+    
+    
   }
   
 .cover-text > h2 {
     color: white;
     padding-top: 15px;
     padding-bottom: 20px;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 500;
+    
   }
 
 .home-text{
@@ -80,7 +85,7 @@ font-weight: 600;
 padding:20px;
 text-decoration: underline;
 color: #fff;
-background-color: #ffc107;
+background-color: #eb5f08;
 text-align: center;
 }
 
@@ -88,7 +93,7 @@ text-align: center;
 
 .card {
     background-color:white;
-    border: 3px solid #ffc107;
+    border: 3px solid #eb5f08;
     color: black;
 }
 
@@ -101,7 +106,7 @@ text-align: center;
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #ffc107;
+    background-color: #eb5f08;
 }
 
 .scale {
@@ -120,7 +125,7 @@ text-align: center;
 }
 
 .masthead-text {
-    background-color: #fde396;
+    background-color: #e58639;
     color: black;
     padding:20px;
     text-align: center;
@@ -134,7 +139,7 @@ text-align: center;
 
 .art-link:hover,
 .page-link {
-    color: #ffc107;
+    color: #eb5f08;
 }
 
 .post-title {
@@ -148,14 +153,14 @@ text-align: center;
     color: black;
 }
 .btn-primary {
-    background-color: #ffc107;
+    background-color: #eb5f08;
     border: 3px solid #fff;
     color: white;
 }
 .btn-primary:hover {
     background-color: #fff;
-    color: #ffc107;
-    border: 3px solid #ffc107;
+    color: #eb5f08;
+    border: 3px solid #eb5f08;
 }
 /* About page*/
 
@@ -163,12 +168,21 @@ text-align: center;
     height: 100vh;
     width: 100vw;
 }
+
+/* Contact Page*/
+
+.btn-warning {
+
+    background-color:#eb5f08;
+
+
+}
 /* Signup page*/
 
 .btn-signup,
 .btn-edit {
     background-color: #fff;
-    color: #ffc107;
+    color: #eb5f08;
     text-align: center;
 }
 
@@ -192,8 +206,8 @@ text-align: center;
 /*Share Page*/
 
 .shared-card {
-    border: #ffc107 ;
-    box-shadow: #ffc107 1px 10px 10px 1px;
+    border: #eb5f08 ;
+    box-shadow: #eb5f08 1px 10px 10px 1px;
     padding: 15px;
     margin-bottom: 25px;
     height: 500px;
@@ -246,7 +260,7 @@ text-align: center;
 
  footer i{
     text-decoration: none;
-    color: white;
+    color:#fff;
 }
 .socials {
  justify-content:space-evenly;

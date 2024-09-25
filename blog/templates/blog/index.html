@@ -9,7 +9,7 @@
 
             <section id="hero-outer">
 
-                <img src="{% static 'images/mandala.webp' %}" class="hero-image" alt="mandala image" />
+                <img src="{% static 'images/hero-image.jpg' %}" class="hero-image" alt="mandala image" />
                 <div class="cover-text">
                     <h1>Welcome to Art of Mandalas</h1>
                     <h2>There is great power in creating your own mandalas</h2>
@@ -45,14 +45,15 @@
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
 
-                            <hr />
-                            <p class="card-text text-muted h6">{{ post.created_on}}
-                            </p>
-                            <p class="card-text text-muted h6 px-2 small">
-                                <span class="text-secondary .d-inline-flex"><i class="fas fa-heart"></i> </span>
-                                {{ post.likes_count }}
-                            </p>
-
+                            <hr class="my-2" />
+                            <div class="d-flex justify-content-between">
+                                <p class="card-text text-muted h6 px-2 small"> {{ post.created_on}}
+                                </p>
+                                <p class="card-text text-muted h6 px-2 small">
+                                    <span class="text-secondary .d-inline-flex"><i class="far fa-heart"></i> </span>
+                                    {{ post.likes_count }}
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
