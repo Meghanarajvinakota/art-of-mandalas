@@ -84,7 +84,7 @@ background-color: #ffc107;
 text-align: center;
 }
 
-/* Popular recipes cards*/
+/* Popular arts cards*/
 
 .card {
     background-color: white;
@@ -109,7 +109,7 @@ text-align: center;
     height: auto;
 }
 
-/*Recipe Details*/
+/*art Details*/
 
 .masthead {
     overflow: hidden;
@@ -132,7 +132,7 @@ text-align: center;
     color: black;
 }
 
-.recipe-link:hover,
+.art-link:hover,
 .page-link {
     color: #ffc107;
 }
@@ -178,7 +178,7 @@ text-align: center;
     color: black;
 }
 
-.recipe-link {
+.art-link {
     color: black;
     text-decoration: none;
 }

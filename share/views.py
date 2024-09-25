@@ -48,7 +48,7 @@ def share_edit(request, share_id):
             messages.add_message(request, messages.SUCCESS, "Updated !!")
         else:
             messages.add_message(request, messages.ERROR,
-            'Error updating recipe!')
+            'Error updating art!')
         return redirect('share')
 
 def share_delete(request, share_id):
