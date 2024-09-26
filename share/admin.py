@@ -6,6 +6,9 @@ from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(Share)
 class ShareAdmin(admin.ModelAdmin):
+    """
+    Lists fields for display in name ,title and approved
+    """
     list_display = ('name', 'title', 'approved')
     list_filter = ('approved',)  # Add filter by approval status
     actions = ['approve_shares']

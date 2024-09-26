@@ -6,6 +6,10 @@ from .forms import ContactUsForm
 # Create your views here.
 
 def contact_us(request):
+    """
+    Renders the contcat form on the contact page
+    for the website :model:`contact/conatct.html`.
+    """
 
     if request.method == "POST":
         contact_us_form = ContactUsForm(data=request.POST)

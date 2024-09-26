@@ -6,5 +6,8 @@ from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(About)
 class AboutAdmin(SummernoteModelAdmin):
+    """
+    Adds text editing of the body in admin panel
+    """
 
     summernote_fields = ('content',)

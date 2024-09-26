@@ -5,7 +5,9 @@ from django.urls import reverse
 # Create your models here.
 
 class Share(models.Model):
-    
+    """
+    Stores a share art  entered by a user related to :model:`auth.User`.
+    """
     name = models.CharField(max_length=50)
     picture = CloudinaryField('image')
     title = models.CharField(max_length=50)

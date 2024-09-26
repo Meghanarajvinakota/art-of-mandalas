@@ -6,5 +6,8 @@ from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(ContactForm)
 class ContactFormAdmin(admin.ModelAdmin):
+    """
+    Lists fields for display in admin,message and read.
+    """
 
     list_display = ('message', 'read',)
