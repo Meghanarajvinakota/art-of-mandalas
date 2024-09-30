@@ -4,7 +4,7 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
-    <!-- Share a book form -->
+    <!-- Share an art form -->
     
         <div class="col-12 mt-3">
                 
@@ -18,7 +18,7 @@
                 <p>Fill out the information below and then check out what others have shared!!</p>
                 <p>Posting as: {{ user.username }}</p>
                 <form id="shareForm" method="post" style="margin-top: 1.3em;" enctype="multipart/form-data">
-                    {{ share_a_book_form | crispy }}
+                    {{ share_an_art_form | crispy }}
                     {% csrf_token %}
                     <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
                 </form>
@@ -26,7 +26,7 @@
             </div>
         </div>
 
-          <!-- Books users have shared -->
+          <!-- Arts users have shared -->
 
         <div id="shared" class="col-12 mt-3 left">
             <p class="home-text">Shared Arts</p>
@@ -37,7 +37,7 @@
                         <div class="card-body">
                             <div class="image-container">
                                 
-                        <div id="share{{share.id}}" class="share-book shared-details-text text-center">
+                        <div id="share{{share.id}}" class="share-art shared-details-text text-center">
                             <div>
                                 <img class="share-img " src="{{ share.picture.url }}" alt=" Image">
                             </div>
@@ -48,7 +48,7 @@
                                 <h4>Shared by: {{share.name}}</h4>
                                 {% if user.is_authenticated and share.name == user.username %}
                                 <button class="btn btn-delete" data-share_id="{{ share.id }}">Delete</button>
-                                <button class="btn btn-edit" data-share_id="{{ share.id }}">Edit</button>
+                                <button class="btn btn-edit"  data-share_id="{{ share.id }}">Edit</button>
                                 {% endif %}
                             </div>
                         </div>

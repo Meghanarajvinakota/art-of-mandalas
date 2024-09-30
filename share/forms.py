@@ -3,9 +3,9 @@ from django import forms
 
 
 
-class ShareABookForm(forms.ModelForm):
+class ShareAnArtForm(forms.ModelForm):
     """
-   Form to allow to give details of user that are title ,author and picture the share a book form
+   Form to allow to give details of user that are title ,author and picture the share an art form
     """
     class Meta:
         model = Share
