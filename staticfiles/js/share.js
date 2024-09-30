@@ -10,8 +10,8 @@ const deleteConfirm = document.getElementById("deleteConfirm");
 
 function stripAuthor(content) {
   let lines = content.split("\n");
-  let writtenByLine = lines.find((line) => line.startsWith("Written by:"));
-  return writtenByLine ? writtenByLine.replace("Written by: ", "") : "";
+  let artByLine = lines.find((line) => line.startsWith("Art by:"));
+  return artByLine ? artByLine.replace("Art by: ", "") : "";
 }
 function stripTitle(content) {
   let lines = content.split("\n");
