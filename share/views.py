@@ -72,7 +72,7 @@ def share_delete(request, share_id):
     share = get_object_or_404(Share, pk = share_id)
     if share.name == request.user.username:
         share.delete()
-        messages.add_message(request, messages.SUCCESS, 'MandalaArt deleted!')
+        messages.add_message(request, messages.SUCCESS, 'Mandala Art deleted!')
     else:
         messages.add_message(request, messages.ERROR,
             'You can only delete your own shared Mnadala art!')
