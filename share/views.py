@@ -37,19 +37,33 @@ def share_an_art(request):
     Edit a shared post
     """
 def share_edit(request, share_id):
- 
+    # Get the share instance to edit
+    share_to_edit = get_object_or_404(Share, pk=share_id)
+
+    # Ensure only the owner can edit
+    if share_to_edit.name != request.user.username:
+        messages.add_message(request, messages.ERROR, 'You can only edit your own posts!')
+        return redirect('share')  # Redirect back if unauthorized
+
+    # Handle the form submission
     if request.method == "POST":
-        share_to_edit = get_object_or_404(Share, pk=share_id)
-        share_an_art_form = ShareAnArtForm(request.POST, request.FILES)
+        share_an_art_form = ShareAnArtForm(request.POST, request.FILES, instance=share_to_edit)
+        
         if share_an_art_form.is_valid():
-            share_to_edit.author = request.POST.get('author')
-            share_to_edit.title = request.POST.get('title')
-            share_to_edit.save()
-            messages.add_message(request, messages.SUCCESS, "Updated !!")
+            share_an_art_form.save()  # Save the changes
+            messages.add_message(request, messages.SUCCESS, "Updated successfully!")
+            return redirect('share')  # Redirect to the main share page after saving
         else:
-            messages.add_message(request, messages.ERROR,
-            'Error updating art!')
-        return redirect('share')
+            messages.add_message(request, messages.ERROR, 'Error updating art!')
+    
+    else:
+        # Prepopulate the form with the existing instance for GET requests
+        share_an_art_form = ShareAnArtForm(instance=share_to_edit)
+
+    return render(request, 'share/share_edit.html', {
+        'form': share_an_art_form,
+        'share': share_to_edit
+    })
 
 def share_delete(request, share_id):
     """
