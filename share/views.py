@@ -19,7 +19,7 @@ def share_an_art(request):
             shared_art = share_an_art_form.save(commit = False)
             shared_art.name = request.user.username
             shared_art.save()
-            messages.add_message(request, messages.SUCCESS, "Thanks for sharing!!")
+            messages.add_message(request, messages.SUCCESS, "Thanks for sharing!! waiting for approval.")
 
     """
     Renders the Share page
