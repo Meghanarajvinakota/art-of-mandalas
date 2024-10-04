@@ -219,7 +219,6 @@ Fonts used were 'Lato', 'Raleway' and 'Alice'. All were sourced from Google Font
 <summary> Home Page
 </summary>
 
-
 ## Deployment
 
 ### Cloning the [GitHub](https://github.com/) repository
