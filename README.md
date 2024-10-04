@@ -217,7 +217,165 @@ Fonts used were 'Lato', 'Raleway' and 'Alice'. All were sourced from Google Font
 
 <details>
 <summary> Home Page
+
+Visitor
+![Home Page](./assets/docs/home-visitor.png)
+Logged in User
+![Home Page](./assets/docs/home-login-user.png)
+![Home Page](./assets/docs/home-login-user-mid.png)
+![Home Page](./assets/docs/home-login-user-bottom.png)
+</details>
+- The home page consists of a total of 6 mandal art posts where the user will have an option to be directed to the next/prev page to view more art posts on the webpage.
+- The next/prev button will be available to both logged in users and visitors.
+- All  arts will be displayed to the users / visitors from newest to oldest on the main page.
+- Arts on the main page show the author name, number of likes as well as the published date stamp.
+
+<details>
+<summary> Navigation
 </summary>
+
+Visitor
+![Nav](./assets/docs/nav-bar-logout.png)
+Logged in User
+![Nav](./assets/docs/nav-bar-login.png)
+</details>
+
+- Webpage name "Art of Mandalas" redirects to the home page when clicked for easy navigation.
+- Active pages will show as "darker" text on the nav bar for better user experience.
+- The nav bar consists of the home, about,contact and signin/signout/sign-up options as well as the current logged in user's name.
+
+<details>
+<summary> About Page
+</summary>
+
+Logged in User / Visitor
+![About Page](./assets/docs/about-page.png)
+</details>
+
+-  As a logged in user / visitor the about page is available to get a better idea of what the webpage is about more information.
+
+<details>
+<summary> Contact Page
+</summary>
+
+Logged in User / Visitor
+![Contact Page](./assets/docs/contact-page.png)
+</details>
+
+-  As a logged in user / visitor the contact page is available to submit a contact form if they wish to be contacted.
+
+<details>
+<summary> Share Page
+</summary>
+
+Logged in User 
+![Share Page](./assets/docs/share-page-top.png)
+![Share Page](./assets/docs/share-page-mid.png)
+![Share Page](./assets/docs/share-page-bottom.png)
+
+- As a logged in user the share page is available to sharec their own arts and they can see the other arts that other users have been posted.
+- As a logge din user they can perform edit and delete opetions
+    - If you click edit button it will take to you to the share form then you edit your art.
+    - If delete is clicked the user will be prompted to confirm the deletion.
+    - If cancelled the user will be redirected back to the Share page.
+
+</details>
+
+-  As a logged in user
+
+<details>
+<summary> Post Detail page
+</summary>
+
+Visitor
+![Post Detail page](./assets/docs/post-detail-visitor.png)
+![Post Detail page](./assets/docs/postdetail-visitor-bottom.png)
+
+Logged in User
+![Post Detail page](./assets/docs/postdetail-loginuser.png)
+![Post Detail page](./assets/docs/postdetail-loginuser-bottom.png)
+</details>
+
+-  The Post detail page is visible to both logged in users and visitors.
+- A full detailed post is available to follow, number of likes and comments is shown below the post detail.
+- As a logged in user you will be able to like and comment on a post which will be visible to both logged in users and visitors. 
+- As a logged in user can access edit and delete button will be visible below the art detail. 
+    - If the user clicks on edit they will be redirected to the comment box where they can edit their comment. 
+    - If delete is clicked the user will be prompted to confirm the deletion.
+        - If cancelled the user will be redirected back to the post detail page.
+
+<details>
+<summary> Sign Up Page
+</summary>
+
+![Sign Up Page](./assets/docs/signup-page.png)
+</details>
+
+- As a visitor of the page, a sign up is available to register as a site user and enables post adding, likes and commenting on post posts.
+- The visitor needs to add a username, email as optional a password and then a confirmation password. 
+- After submission of the form the user will be prompted for a successful signing in of the newly created user and directed to the homepage where all features become visible.
+- For users who have a login already a link is visible for ease of navigation to the correct page.
+
+<details>
+<summary> Sign In Page
+</summary>
+
+![Sign In Page](./assets/docs/signin-page.png)
+</details>
+
+- As a registered site user, a sign in page is available where they can enter using their username and password.
+- Once logged in the user will be prompted for a successful signing in and redirected to the home page.
+- For users who do not have a login already a link is visible for ease of navigation to the correct page.
+
+<details>
+<summary> Sign Out Page
+</summary>
+
+![Sign Out Page](./assets/docs/signout-page.png)
+</details>
+
+- As a logged in user, a logout page is available where they can successfully logout of the webpage.
+- Once logged out the user will be prompted for a successful signing out and redirected to the home page.
+
+<details>
+<summary> Footer
+</summary>
+
+![Footer](./assets/docs/footer.png)
+</details>
+
+- The footer gives the webpage information / copyright to the users / visitors of the site and links to social media pages.
+
+<details>
+<summary> Error Pages
+</summary>
+
+![404](./assets/docs/404-error.png)
+![500](./assets/docs/500-error.png)
+</details>
+
+- Custom 404 & 500 error pages were created.
+- Buttons to redirect the user / visitor back to the home page were implemented.
+
+<details>
+<summary> Notifications
+</summary>
+
+![Notifications](./assets/docs/notification.png)
+</details>
+
+- Notifications are prompted at the top of the webpage for all actions the user reacts with.
+- A close button is available if the user wishes to dismiss the notifications.
+
+<details>
+<summary> Delete Modal on Comments 
+</summary>
+
+![Delete Modal](./assets/docs/delete-modal.png)
+</details>
+
+- A delete modal has been implemented to prompt the user when they choose to delete a comment they created to prevent accidental deletion.
+
 
 ## Deployment
 
@@ -328,7 +486,7 @@ The API platform has been used to store images uploaded by users of the webpage
     - Used to create the wireframes
 - [Coolers](https://coolors.co/)
     - Used to generate the colours 
-- [Am I Responsive](https://ui.dev/amiresponsive?url=https://recipe-share-58fcaea24fd7.herokuapp.com)
+- [Am I Responsive](https://ui.dev/amiresponsive?url=https://post-share-58fcaea24fd7.herokuapp.com)
     - Used to for the image across devices in the README.md
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools)
     - DevTools was used throughout the process of creating the web page to find bugs and test responsiveness on elements etc
