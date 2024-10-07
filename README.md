@@ -351,7 +351,7 @@ Logged in User
 </summary>
 
 ![404](./assets/docs/404-error.png)
-![500](./assets/docs/500-error.png)
+
 </details>
 
 - Custom 404 & 500 error pages were created.
@@ -361,21 +361,108 @@ Logged in User
 <summary> Notifications
 </summary>
 
-![Notifications](./assets/docs/notification.png)
+![Notifications](./assets/docs/notifications.png)
 </details>
 
 - Notifications are prompted at the top of the webpage for all actions the user reacts with.
 - A close button is available if the user wishes to dismiss the notifications.
 
 <details>
-<summary> Delete Modal on Comments 
+<summary> Delete Modal on Share page 
 </summary>
 
-![Delete Modal](./assets/docs/delete-modal.png)
+![Delete Modal](./assets/docs/delete.png)
 </details>
 
-- A delete modal has been implemented to prompt the user when they choose to delete a comment they created to prevent accidental deletion.
+- A delete modal has been implemented to prompt the user when they choose to delete a shared postthey created to prevent accidental deletion.
 
+## Recipe Share | Testing
+
+Comprehensive manual testing has been performed throughout the development of this webpage to ensure the seamless and optimal functionality of all features.
+
+## Manual Testing
+
+### As a visitor
+
+| What was tested | Expected Result | Outcome |
+|:---|:---|:---:|
+| Click to open links on Nav bar | Redirect to each page | Passed |
+| Click on the Logo on the nav bar | Redirect to the home page | Passed|
+| Click on the Sign Up, Login, Logout on the nav bar | Redirect to the relevant pages | Passed |
+| Click on a Recipe | Redirect to the Recipe detail | Passed |
+| Click on the "like" button | No action should take place | Passed |
+| Click on the "next" or "back" buttons below the recipe posts | Redirect to the next/prev page | Passed |
+| Click on the social media links in the footer | Redirects to the relevant social media page in a new tab | Passed |
+| Click on Sign-Up & enter relevant info | Notification of being signed in and the new username created | Passed |
+
+### As a logged in User 
+
+### As a logged in User 
+
+| What was tested | Expected Result | Outcome |
+|:---|:---|:---:|
+| Click on the "like" button | Add 1 to the number of like and the heart turns red or back to grey if the art was already liked | Passed |
+| Populate the comment text area and click the "post comment" button | Creates a comment below the art detail | Passed |
+| Click on the delete button on the comments that belongs to the logged in user | The user is redirected to a delete confirmation page, the post is deleted if confirmed | Passed |
+| Click on the edit button on the comments that belongs to the logged in user | The comment can be edited | Passed |
+| Populate the contact form on the contact page and clicked the submit button | Submits successfully and notifies the user | Passed |
+| Populate the share art form on the share page and clicked the submit button | Submits successfully notifies the user | Passed |
+| Click on the delete button on the art that belongs to the logged in user | The user is redirected to a delete confirmation page, the art is deleted if confirmed | Passed |
+| Click on the edit button on the shared art that belongs to the logged in user | The art can be edited | Passed |
+| Click logout in the nav bar | Logout is successful and user is redirected to the Home page | Passed |
+
+### Notifications and Errors
+
+| What was tested | Expected Result | Outcome |
+|:---|:---|:---:|
+| A user/visitor not being logged in | Notification in the nav bar when "you are not logged in" on the home page | Passed |
+| Logout | Notification: "You have signed out." | Passed |
+| Login | Notification: "Successfully signed in as {username}." | Passed |
+| Sign-up | Notification: "Successfully signed in as {username}." | Passed |
+| Post a comment | Notification: "Comment was posted successfully!" | Passed |
+| Update a comment | Notification: "Your comment has been successfully updated!" | Passed |
+| Delete a comment confirmation | Notification: "Are you sure you want to delete your comment? You cannot undo this action once confirmed." | Passed |
+| Delete a comment | Notification: "Your comment has been deleted!" | Passed |
+| Contact form submitted | Notification: "Thanks for your message! I will try to read and respond within 5 working days." | Passed |
+| Mndala art share post created & submitted | Notification: "Your art has been waiting for approval!" | Passed |
+| Manadala art share post edited & submitted | Notification: "Your art has been updated successfully!" | Passed |
+| Update art | Notification: "Your art has been successfully updated!" | Passed |
+| Delete art confirmation | Notification: "Are you sure you want to delete your art? You cannot undo this action once confirmed." | Passed |
+| Delete art | Notification: "Your art has been deleted!" | Passed |
+| Appending a page url to the search bar that does not exist  | Redirect to 404 - PAGE NOT FOUND | Passed |
+
+### Layout and built in functionality
+
+| What was tested | Expected Result | Outcome |
+|:---|:---|:---:|
+| Art posts | Views as newest recipes to oldest on the home page | Passed |
+| Time stamps on arts and comments | Views the time a post or comment is created | Passed |
+| "Like" icon on home page | "Like" icon and count updates on home page | Passed |
+| Comment counter | Displays the correct number of comments | Passed |
+| Author banner on the art post | Displays the correct author | Passed |
+| Art titles cannot be duplicated | An art wont allow posting if another one exist with the same title | Passed |
+| Time stamps on shared arts | Views the time an art is created | Passed |
+| Author banner on the shared art post | Displays the correct author | Passed |
+
+### Chrome Developer Tools
+
+Chrome developer tools were used throughout the development of the webpage to test responsiveness. Responsiveness was tested using developer Tools to emulate the following devices:
+- Desktop 
+- Laptops
+- Tablets
+- Mobile phones
+
+### Browser Testing
+
+During the development of the webpage the testing was done using Google Chrome. In production the site has been tested on the following browsers:
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
+- Opera
+
+## Validation
+
+### [W3C HTML Validator](https://validator.w3.org/)
 
 ## Deployment
 
@@ -440,7 +527,7 @@ The API platform has been used to store images uploaded by users of the webpage
 2. CLOUDINARY_URL - Your Cloudinary API key
 3. PORT = 8000
 4. DISABLE_COLLECTSTATIC = 1 - this is temporary, will be removed for the final deployment
-5. DATABASE_URL - Your ElephantSQL database URL
+5. DATABASE_URL - Your Postgres database URL
 
 #### Heroku to deploy
 
