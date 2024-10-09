@@ -2,17 +2,18 @@ from django.contrib import admin
 from .models import Post, Comment
 from django_summernote.admin import SummernoteModelAdmin
 
+
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
     """
     Lists fields for display in admin, search & filter fields.
     """
-
     list_display = ('title', 'slug', 'status', 'created_on')
     search_fields = ['title', 'content']
     list_filter = ('status', 'created_on',)
     prepopulated_fields = {'slug': ('title',)}
     summernote_fields = ('content',)
+
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
@@ -26,10 +27,8 @@ class CommentAdmin(admin.ModelAdmin):
 
     def approve_comments(self, request, queryset):
         queryset.update(approved=True)
-        self.message_user(request, "Selected comments have been approved.")  # Confirmation message
+        self.message_user(request, "Selected comments have been approved.")
 
-    approve_comments.short_description = "Approve selected comments"  # Description for the action
+    approve_comments.short_description = "Approve selected comments"
 
 # Register your models here.
-
-

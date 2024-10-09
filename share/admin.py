@@ -4,6 +4,7 @@ from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
 
+
 @admin.register(Share)
 class ShareAdmin(admin.ModelAdmin):
     """
@@ -15,7 +16,6 @@ class ShareAdmin(admin.ModelAdmin):
 
     def approve_shares(self, request, queryset):
         queryset.update(approved=True)
-        self.message_user(request, "Selected shares have been approved.")  # Confirmation message
+        self.message_user(request, "Selected shares have been approved.")
 
-    approve_shares.short_description = "Approve selected shares"  # Description for the action
-
+    approve_shares.short_description = "Approve selected shares"

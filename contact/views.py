@@ -5,6 +5,7 @@ from .forms import ContactUsForm
 
 # Create your views here.
 
+
 def contact_us(request):
     """
     Renders the contcat form on the contact page
@@ -15,7 +16,10 @@ def contact_us(request):
         contact_us_form = ContactUsForm(data=request.POST)
         if contact_us_form.is_valid():
             contact_us_form.save()
-            messages.add_message(request, messages.SUCCESS, "Thanks for your message! I will try to read and respond within 5 working days.")
+            messages.add_message(request, messages.SUCCESS,
+                                 ("Thanks for your message! "
+                                  "I will try to read and respond "
+                                  "within 5 working days."))
     """
     Renders the Contact page
     """

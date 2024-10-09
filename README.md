@@ -463,7 +463,32 @@ During the development of the webpage the testing was done using Google Chrome. 
 ## Validation
 
 ### [W3C HTML Validator](https://validator.w3.org/)
+![HTML Validator](./assets/docs/html-validator.png)
+- No errors were found 
 
+### [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+![CSS Validator](./assets/docs/css-validator.png)
+
+- No errors were found 
+
+### [JSHint JavaScript Validator](https://jshint.com/)
+![JS Hint Validator](./assets/docs/comment-js.png)
+![JS Hint Validator](./assets/docs/share-js.png)
+
+- No errors were found
+
+### [CI Python Linter](https://pep8ci.herokuapp.com)
+![CI Python Linter](./assets/docs/python-linter.png)
+
+- All Python files were tested, no errors or warnings were found. An example on the views.py file can be seen.
+
+## Fixed Bugs
+
+1. In share page when user tried to edit the art the image is not uploading later fixed that
+
+## Known / Unresolved Bugs
+
+1. The Recipe posts on the home page are slightly big on the desktop view, so I have considered adding more recipes to the first page to give it a more squashed view.
 ## Deployment
 
 ### Cloning the [GitHub](https://github.com/) repository

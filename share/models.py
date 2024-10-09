@@ -4,6 +4,7 @@ from django.urls import reverse
 
 # Create your models here.
 
+
 class Share(models.Model):
     """
     Stores a share art  entered by a user related to :model:`auth.User`.
@@ -19,5 +20,5 @@ class Share(models.Model):
         return self.name
 
     def get_absolute_url(self):
-       
+
         return reverse('share')

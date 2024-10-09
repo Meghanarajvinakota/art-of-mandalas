@@ -5,22 +5,19 @@
 <!-- index.html content starts here -->
 <div class="container-fluid">
     <div class="row">
-        
-            <div class="flex-shrink-90 main-bg">
+        <div class="flex-shrink-90 main-bg">
+            <section id="hero-outer">
+                <img src="{% static 'images/hero-image.jpg' %}" class="hero-image" alt="mandala image">
+                <div class="cover-text">
+                    <h1>Welcome to Art of Mandalas</h1>
+                    <h2>There is great power in creating your own mandalas</h2>
+                    <p><a class="btn btn-lg btn-primary" href="#popular" aria-label="Go to the popular Arts">Explore
+                            Popular Mandalas</a></p>
+                    <br>
+                </div>
+            </section>
+        </div>
 
-                <section id="hero-outer">
-
-                    <img src="{% static 'images/hero-image.jpg' %}" class="hero-image" alt="mandala image">
-                    <div class="cover-text">
-                        <h1>Welcome to Art of Mandalas</h1>
-                        <h2>There is great power in creating your own mandalas</h2>
-                        <p><a class="btn btn-lg btn-primary" href="#popular" aria-label="Go to the popular Arts">Explore
-                                Popular Mandalas</a></p>
-                        <br>
-                    </div>
-                </section>
-            </div>
-       
         <!-- Blog Entries Column -->
         <div id="popular" class="col-12 mt-3 left">
             <p class="home-text">Popular Arts</p>

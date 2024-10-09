@@ -11,3 +11,4 @@ class AboutAdmin(SummernoteModelAdmin):
     """
 
     summernote_fields = ('content',)
+    
