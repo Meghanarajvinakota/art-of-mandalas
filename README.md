@@ -489,6 +489,34 @@ During the development of the webpage the testing was done using Google Chrome. 
 ## Known / Unresolved Bugs
 
 1. The Recipe posts on the home page are slightly big on the desktop view, so I have considered adding more recipes to the first page to give it a more squashed view.
+
+## PEP8 Validator
+
+### Lighthouse Results:
+
+#### Home Page:
+![Home Page](./assets/docs/home-lighthouse.png)
+
+#### Art Details:
+![Art Detail](./assets/docs/artdeatil-lighthouse.png)
+
+#### About page:
+![About Page](./assets/docs/about-lighthouse.png)
+
+#### Contact Page:
+![Contact Page](./assets/docs/contact-lighthouse.png)
+
+#### Share Page:
+![Share Page](./assets/docs/share-lighthouse.png)
+
+#### Sign Up Page:
+![Sign Up Page](./assets/docs/signup-lighthouse.png)
+
+#### Log in Page:
+![Login Page](./assets/docs/signin-lighthouse.png)
+
+#### Logout Page
+![Logout Page](./assets/docs/signout-lighthouse.png)
 ## Deployment
 
 ### Cloning the [GitHub](https://github.com/) repository
