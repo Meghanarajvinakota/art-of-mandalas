@@ -376,7 +376,7 @@ Logged in User
 
 - A delete modal has been implemented to prompt the user when they choose to delete a shared postthey created to prevent accidental deletion.
 
-## Recipe Share | Testing
+##  Art of Mandalas| Testing
 
 Comprehensive manual testing has been performed throughout the development of this webpage to ensure the seamless and optimal functionality of all features.
 
@@ -389,9 +389,9 @@ Comprehensive manual testing has been performed throughout the development of th
 | Click to open links on Nav bar | Redirect to each page | Passed |
 | Click on the Logo on the nav bar | Redirect to the home page | Passed|
 | Click on the Sign Up, Login, Logout on the nav bar | Redirect to the relevant pages | Passed |
-| Click on a Recipe | Redirect to the Recipe detail | Passed |
+| Click on art | Redirect to the art detail | Passed |
 | Click on the "like" button | No action should take place | Passed |
-| Click on the "next" or "back" buttons below the recipe posts | Redirect to the next/prev page | Passed |
+| Click on the "next" or "back" buttons below the art posts | Redirect to the next/prev page | Passed |
 | Click on the social media links in the footer | Redirects to the relevant social media page in a new tab | Passed |
 | Click on Sign-Up & enter relevant info | Notification of being signed in and the new username created | Passed |
 
@@ -435,7 +435,7 @@ Comprehensive manual testing has been performed throughout the development of th
 
 | What was tested | Expected Result | Outcome |
 |:---|:---|:---:|
-| Art posts | Views as newest recipes to oldest on the home page | Passed |
+| Art posts | Views as newest arts to oldest on the home page | Passed |
 | Time stamps on arts and comments | Views the time a post or comment is created | Passed |
 | "Like" icon on home page | "Like" icon and count updates on home page | Passed |
 | Comment counter | Displays the correct number of comments | Passed |
@@ -488,7 +488,7 @@ During the development of the webpage the testing was done using Google Chrome. 
 
 ## Known / Unresolved Bugs
 
-1. The Recipe posts on the home page are slightly big on the desktop view, so I have considered adding more recipes to the first page to give it a more squashed view.
+1. The Arts posts on the home page are slightly big on the desktop view, so I have considered adding more artss to the first page to give it a more squashed view.
 
 ## PEP8 Validator
 
